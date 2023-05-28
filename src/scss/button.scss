@@ -1,11 +1,27 @@
 :root {
-
-
-
     & .btn {
         border: none;
         padding: 1rem 1.5rem;
+
+        &--sidebar {
+            background-color: orangered;
+
+            border-radius: 50%;
+
+            &::after {
+                content: '';
+                display: block;
+                z-index: 999;
+                height: 1px;
+                background-color: black;
+                width: 100%;
+            }
+
+            & span {
+                height: 1px;
+                background-color: black;
+                width: 2rem;
+            }
+        } 
     }
-
-
 }
